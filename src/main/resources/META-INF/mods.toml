@@ -1,0 +1,53 @@
+# The name of the mod loader type to load
+modLoader="javafml"
+# A version range to match for said mod loader
+loaderVersion="[2.0,)"
+# A URL to refer people to when problems occur with this mod
+issueTrackerURL="http://github.com/patchworkmc/patchwork-api"
+[[mods]]
+    # The modid of the mod
+    modId="patchwork-testmods"
+    # The version number of the mod
+    version="1.0.0"
+     # A display name for the mod
+    displayName="Patchwork Testmods"
+    # A one-sentence description for this test's existence and what it changes.
+    description='''
+    Tests if patchwork-dispatcher is correctly constructing mods.
+    '''
+## LIFECYCLE
+[[mods]]
+	modId='patchwork-test-loadingstages'
+	version="1.0.0"
+	displayName="Patchwork Loading Stages Test"
+	description="Tests if loading stages like CommonSetup and LoadComplete are being fired"
+### IMC
+[[mods]]
+	modId='patchwork-test-imc-enqueue'
+	version="1.0.0"
+	displayName="Patchwork IMC Sending Test"
+	description="One half of the IMC test. Sends IMC to another mod and receive a callback"
+	[[dependencies.patchwork-test-imc-enqueue]]
+		modId="patchwork-test-imc-process"
+		mandatory=false
+		versionRange="1.0.0"
+		ordering="NONE"
+		side="BOTH"
+[[mods]]
+	modId="patchwork-test-imc-process"
+	version="1.0.0"
+	displayName="Patchwork IMC Processing Test"
+	description="One half of the IMC test. Receives an IMC message and calls back to the sender."
+### </IMC>
+
+## ENTITY EVENTS
+[[mods]]
+	modId="patchwork-test-livingevent"
+	version="1.0.0"
+	displayName="Patchwork LivingEvent Test"
+	description="Tests that LivingEvent events are being fired. Currently incomplete."
+[[mods]]
+	modId="patchwork-test-playerevent"
+	version="1.0.0"
+	displayName="Patchwork PlayerEvent Test"
+	description="Tests that PlayerEvent events are being fired. Currently incomplete."

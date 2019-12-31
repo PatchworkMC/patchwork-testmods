@@ -1,0 +1,38 @@
+# eclipse
+bin
+*.launch
+.settings
+.settings/*
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+logs
+eclipse
+/config
+/run
+classes
+
+/README.txt
+/forge-*-changelog.txt
+
+secret.json
+libs/*
+!/libs/README.txt
+
+.DS_Store
+
+# Thumbnails
+._*
