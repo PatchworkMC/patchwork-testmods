@@ -58,3 +58,9 @@ issueTrackerURL="http://github.com/patchworkmc/patchwork-api"
 	version="1.0.0"
 	displayName="Patchwork Networking Messages Test"
 	description="Tests if custom messages are being sent and recieved successfully."
+## MISC
+[[mods]]
+	modId="patchwork-test-stringremapping"
+	version="1.0.0"
+	displayName="Patchwork String Remapping Test"
+	description="Tests if Patcher is remapping Strings correctly"

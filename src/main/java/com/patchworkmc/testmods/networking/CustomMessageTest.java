@@ -11,6 +11,8 @@ import net.minecraftforge.fml.network.NetworkDirection;
 import net.minecraftforge.fml.network.NetworkEvent;
 import net.minecraftforge.fml.network.NetworkRegistry;
 import net.minecraftforge.fml.network.simple.SimpleChannel;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.network.PacketBuffer;
@@ -20,6 +22,7 @@ import net.minecraft.util.ResourceLocation;
 @Mod.EventBusSubscriber(modid = "patchwork-test-networking-messages")
 public class CustomMessageTest {
 	public static SimpleChannel scInstance;
+	private static Logger logger = LogManager.getLogger("patchwork-test-networking-message");
 
 	public CustomMessageTest() {
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
@@ -57,7 +60,7 @@ public class CustomMessageTest {
 			buf.writeString(message);
 		}
 		public void handle(Supplier<NetworkEvent.Context> ctx) {
-			ctx.get().enqueueWork(() -> System.out.println("TestMessage handled. Message: " + message));
+			ctx.get().enqueueWork(() -> logger.info("TestMessage handled. Message: {}", message));
 			ctx.get().setPacketHandled(true);
 		}
 	}

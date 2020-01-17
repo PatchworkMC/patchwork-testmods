@@ -61,7 +61,7 @@ minecraft {
 			property 'forge.logging.console.level', 'debug'
 
 			mods {
-				golems {
+				patchwork {
 					source sourceSets.main
 				}
 			}
