@@ -21,6 +21,12 @@ issueTrackerURL="http://github.com/patchworkmc/patchwork-api"
 	version="1.0.0"
 	displayName="Patchwork Loading Stages Test"
 	description="Tests if loading stages like CommonSetup and LoadComplete are being fired"
+## ENUM HACKS
+[[mods]]
+	modId='patchwork-test-enumhacks'
+	version="1.0.0"
+	displayName="Patchwork Enum Hacks Test"
+	description="Tests if the hacks for adding to enums are working"
 ### IMC
 [[mods]]
 	modId='patchwork-test-imc-enqueue'
