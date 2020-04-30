@@ -70,3 +70,10 @@ issueTrackerURL="http://github.com/patchworkmc/patchwork-api"
 	version="1.0.0"
 	displayName="Patchwork String Remapping Test"
 	description="Tests if Patcher is remapping Strings correctly"
+
+## ANNOTATION SCANNING
+[[mods]]
+	modId="patchwork-test-annotation-scanning"
+	version="1.0.0"
+	displayName="Patchwork Annotation Scanning Test"
+	description="Tests if Annotatioin Scanning Works"
