@@ -57,6 +57,11 @@ issueTrackerURL="http://github.com/patchworkmc/patchwork-api"
 	version="1.0.0"
 	displayName="Patchwork PlayerEvent Test"
 	description="Tests that PlayerEvent events are being fired. Currently incomplete."
+[[mods]]
+    modId="patchwork-test-projectileimpactevent"
+    version="1.0.0"
+    displayName="Patchwork ProjectileImpactEvent Test"
+    description="Tests that ProjectileImpactEvent events are being fired by vanilla and custom entities."
 
 ## NETWORKING
 [[mods]]
