@@ -23,7 +23,6 @@ import org.apache.logging.log4j.Logger;
  * </p>
  */
 @Mod("patchwork-test-clientplayernetworkevent")
-@Mod.EventBusSubscriber(modid = "patchwork-test-clientplayernetworkevent")
 public class ClientPlayerNetworkEventTest {
     private static Logger logger = LogManager.getLogger("patchwork-test-clientplayernetworkevent");
     public ClientPlayerNetworkEventTest() {
