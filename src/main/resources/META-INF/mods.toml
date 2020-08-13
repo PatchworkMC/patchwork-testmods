@@ -64,6 +64,12 @@ issueTrackerURL="http://github.com/patchworkmc/patchwork-api"
 	version="1.0.0"
 	displayName="Patchwork Networking Messages Test"
 	description="Tests if custom messages are being sent and recieved successfully."
+[[mods]]
+    modId="patchwork-test-clientplayernetworkevent"
+    version="1.0.0"
+    displayName="Patchwork ClientPlayerNetworkEvent Test"
+    description="Tests that ClientPlayerNetworkEvent events are being fired."
+
 ## MISC
 [[mods]]
 	modId="patchwork-test-stringremapping"
