@@ -57,6 +57,11 @@ issueTrackerURL="http://github.com/patchworkmc/patchwork-api"
 	version="1.0.0"
 	displayName="Patchwork PlayerEvent Test"
 	description="Tests that PlayerEvent events are being fired. Currently incomplete."
+[[mods]]
+	modId="patchwork-test-playerinteractevent"
+	version="1.0.0"
+	displayName="Patchwork PlayerInteractEvent Test"
+	description="Tests that PlayerInteractEvent events are being fired."
 
 ## NETWORKING
 [[mods]]
